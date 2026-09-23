@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harold | Art Portfolio</title>
+    <meta
+      name="description"
+      content="Harold's art portfolio featuring paintings, sculpture, prints, and digital studies."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="#top" class="brand" aria-label="Harold home">
+          <span class="brand-mark">H</span>
+          <span>Harold</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#collections">Collections</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="button button-ghost" href="#contact">Book a commission</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Fine art portfolio</p>
+            <h1>Color, form, and feeling in motion.</h1>
+            <p class="lead">
+              Harold creates immersive works that explore memory, movement, and the
+              beauty of everyday textures — turning intimate moments into bold visual
+              stories.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#work">View collection</a>
+              <a class="button button-secondary" href="#about">Artist statement</a>
+            </div>
+            <ul class="stats" aria-label="Artist statistics">
+              <li><strong>12+</strong><span>Years in practice</span></li>
+              <li><strong>48</strong><span>Exhibitions</span></li>
+              <li><strong>90</strong><span>Commissioned works</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-art" aria-label="Featured artwork collage">
+            <div class="art-frame frame-large">
+              <div class="art art-rose"></div>
+            </div>
+            <div class="art-stack">
+              <div class="art-frame frame-small">
+                <div class="art art-sand"></div>
+              </div>
+              <div class="art-frame frame-small">
+                <div class="art art-ocean"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="gallery section-shell">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Selected works</p>
+              <h2>Recent pieces</h2>
+            </div>
+            <div class="filters" aria-label="Filter artwork categories">
+              <button class="filter-btn active" data-filter="all" type="button">All</button>
+              <button class="filter-btn" data-filter="painting" type="button">Painting</button>
+              <button class="filter-btn" data-filter="sculpture" type="button">Sculpture</button>
+              <button class="filter-btn" data-filter="print" type="button">Print</button>
+              <button class="filter-btn" data-filter="digital" type="button">Digital</button>
+            </div>
+          </div>
+
+          <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="collections" class="collections section-shell">
+        <div class="container">
+          <div class="section-head align-left">
+            <div>
+              <p class="eyebrow">Collections</p>
+              <h2>Explorations in atmosphere</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <article class="collection-card">
+              <div class="mini-art mini-one" aria-hidden="true"></div>
+              <div>
+                <p class="meta">Series 01</p>
+                <h3>Pastel Weather</h3>
+              </div>
+              <p>Sun-washed studies of shifting light, memory, and place.</p>
+            </article>
+
+            <article class="collection-card">
+              <div class="mini-art mini-two" aria-hidden="true"></div>
+              <div>
+                <p class="meta">Series 02</p>
+                <h3>Stone & Bloom</h3>
+              </div>
+              <p>Textural forms and softened geometry inspired by nature.</p>
+            </article>
+
+            <article class="collection-card">
+              <div class="mini-art mini-three" aria-hidden="true"></div>
+              <div>
+                <p class="meta">Series 03</p>
+                <h3>Signal Bloom</h3>
+              </div>
+              <p>Digital abstractions merging color fields with rhythm and motion.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">About the artist</p>
+            <h2>Creating work that feels lived in.</h2>
+            <p>
+              Harold’s practice moves between painting, printmaking, and sculptural studies.
+              Through layered pigments, tactile surfaces, and curated palettes, each piece
+              invites viewers to slow down and notice the emotional undercurrent of place.
+            </p>
+            <p>
+              The work is rooted in observation — from urban architecture to coastal light,
+              from quiet interiors to the movement of shadows across a room.
+            </p>
+          </div>
+          <div class="about-panel">
+            <div class="panel-box">
+              <p class="meta">Studio practice</p>
+              <ul>
+                <li>Oil, acrylic, and mixed media</li>
+                <li>Small-batch print editions</li>
+                <li>Site-specific commissions</li>
+                <li>Collaborative direction for interiors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Commission inquiries</p>
+            <h2>Let’s bring your next space to life.</h2>
+          </div>
+          <a class="button" href="mailto:hello@haroldart.studio">hello@haroldart.studio</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2025 Harold</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#">Instagram</a>
+          <a href="#">Behance</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
